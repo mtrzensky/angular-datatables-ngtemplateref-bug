@@ -1,0 +1,7 @@
+<ng-container *ngIf="actions.length > 0">
+  <div class="d-inline-block">
+    <ng-container *ngFor="let action of actions">
+      <button [class]="action.classList" (click)="onActionClick(action.cmd)">{{ action.label }}</button>
+    </ng-container>
+  </div>
+</ng-container>

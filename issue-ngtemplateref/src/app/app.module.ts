@@ -1,14 +1,18 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { DataTablesModule } from 'angular-datatables';
+import { ActionsComponent } from './actions/actions.component';
 
 import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ActionsComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    DataTablesModule
   ],
   providers: [],
   bootstrap: [AppComponent]

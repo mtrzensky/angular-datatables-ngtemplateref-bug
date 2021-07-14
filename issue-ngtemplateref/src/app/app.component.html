@@ -1,1 +1,6 @@
-Test
+<ng-template #dtActions let-data="adtData" let-emitter="captureEvents">
+    <app-actions [actions]="dataTableActions" [data]="data" (emitter)="emitter($event)"></app-actions>
+</ng-template>
+
+<table id="material--template-dt" *ngIf="columns.length" datatable [dtOptions]="dtOptions" class="table table-striped w-100"></table>
+  
